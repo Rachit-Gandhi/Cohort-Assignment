@@ -4,7 +4,14 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  let lower_str = str.toLowerCase();
+  let arr  = lower_str.split('');
+  for(let i =0; i<((arr.length/2) + 1); i++){
+    if(arr[i] == arr[arr.length-i]){
+      return true;
+    }
+  }
+  return false;
 }
-
+console.log(isPalindrome("Traart"));
 module.exports = isPalindrome;
