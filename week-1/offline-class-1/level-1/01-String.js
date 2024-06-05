@@ -15,9 +15,9 @@ getLength("Hello World");
 // indexOf
 function findIndexOf(str, target) {
   console.log("Original String:", str);
-  console.log("Index:", str.indexOf(target));
+  console.log("IndexOf:", str.indexOf(target));
 }
-findIndexOf("Hello World", "World");
+findIndexOf("Hello World World", 'o');
 
 // lastIndexOf
 function findLastIndexOf(str, target) {
@@ -38,19 +38,20 @@ function getSubstring(str, start, end) {
   console.log("Original String:", str);
   console.log("After substring:", str.substring(start, end));
 }
-getSubstring("Hello World", 0, 5);
+getSubstring("Hello World", 1, 5);
 
 // replace
 function replaceString(str, target, replacement) {
   console.log("Original String:", str);
   console.log("After replace:", str.replace(target, replacement));
 }
-replaceString("Hello World", "World", "JavaScript");
+replaceString("Hello World", "world", "JavaScript");
 
 // split
 function splitString(str, separator) {
   console.log("Original String:", str);
   console.log("After split:", str.split(separator));
+  console.log("Array Conversion"+ typeof(str.split('')));
 }
 splitString("Hello World", " ");
 
